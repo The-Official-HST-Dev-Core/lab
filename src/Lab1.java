@@ -3,9 +3,9 @@ import java.util.Deque;
 
 
 public class Lab1{
-    public static void main(String[] str1) {
+    static void main() {
         Lab1 program = new Lab1();
-        System.out.println(program.checkArray("(((){}{}}))"));
+        System.out.println(program.checkArray("(((){}}}))"));
     }
     public boolean checkArray(String str){
         Deque<Character> stack = new ArrayDeque<>();
