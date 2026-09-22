@@ -1,27 +1,2 @@
-### IntelliJ IDEA ###
-.kotlin
-
-### Eclipse ###
-.apt_generatede
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
 lab/
 !lab/src/
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
-.vscode/
-
-### Mac OS ###
-.DS_Store
