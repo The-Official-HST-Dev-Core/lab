@@ -1,0 +1,6 @@
+.idea/
+.out/
+.lab/
+LAB.iml
+
+!src/*
