@@ -1,6 +1,6 @@
 .idea/**
-.hello.java
-.LAB.iml
+hello.java
+LAB.iml
 
 lab/*
 !lab/src
