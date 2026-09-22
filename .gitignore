@@ -1,20 +1,17 @@
 ### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 .kotlin
 
 ### Eclipse ###
-.apt_generated
+.apt_generatede
 .classpath
 .factorypath
 .project
 .settings
 .springBeans
 .sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+
+lab/
+!lab/src/
 
 ### NetBeans ###
 /nbproject/private/
