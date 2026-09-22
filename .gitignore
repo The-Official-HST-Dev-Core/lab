@@ -3,5 +3,6 @@
 .lab/
 LAB.iml
 
+!src
 !src/
 !src/*
