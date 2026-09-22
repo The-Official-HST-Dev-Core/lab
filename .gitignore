@@ -1,7 +1,0 @@
-.idea/**
-hello.java
-LAB.iml
-
-lab/*
-!lab/src
-!lab/src/**
