@@ -1,7 +1,6 @@
 .idea/
 .out/
-.lab/
-*.iml
+LAB.iml
 
 !src/
 !.gitignore
