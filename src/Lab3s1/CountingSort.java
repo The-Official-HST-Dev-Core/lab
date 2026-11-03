@@ -10,20 +10,8 @@ public class CountingSort implements Sorting<Integer>{
         if(nums == null || nums.size()<=1 ){
             return;
         }
-        int min=nums.get(0);
-        int max=nums.get(1);
-        if(nums.get(0)>nums.get(1)){
-                max=nums.get(0);
-                min=nums.get(1);
-            }
-        for (int i=1;i<nums.size();i++){
-            if(nums.get(i)>max){
-                max=nums.get(i);
-            }
-            if(nums.get(i)<min){
-                min=nums.get(i);
-            }
-        }
+        int min=0;
+        int max=127;
         int[] accountant = new int[max-min+1];
         for(int j=0; j<nums.size();j++){
             accountant[nums.get(j)-min]++;
