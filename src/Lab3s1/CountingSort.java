@@ -12,19 +12,22 @@ public class CountingSort implements Sorting<Integer>{
         }
         int min=0;
         int max=127;
+        
         int[] accountant = new int[max-min+1];
         for(int j=0; j<nums.size();j++){
             accountant[nums.get(j)-min]++;
         }
-        int cntr=0;
-        for(int k=0; k<(max-min+1);k++){
-            if (accountant[k]!=0){
-                while (accountant[k]!=0) {
-                nums.set(cntr, k+min);
-                accountant[k]--;
-                cntr++;
-                }
-            }
+        for (int i = 1; i < accountant.length; i++) {
+            accountant[i]+=accountant[i-1];
+        }
+
+        List<Integer> temp = new ArrayList<>(java.util.Collections.nCopies(nums.size(), 0));
+        for(int k=nums.size()-1; k>=0;k--){
+            temp.set(accountant[nums.get(k)-min]-1,nums.get(k));
+            accountant[nums.get(k)-min]--;
+        }
+        for(int i=0; i<nums.size();i++){
+            nums.set(i, temp.get(i));
         }
     }
 }
